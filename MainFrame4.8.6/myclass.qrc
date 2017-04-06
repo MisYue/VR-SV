@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="MainWindow">
+    <file>Image/StartImage.jpg</file>
+    <file>Image/apn.png</file>
+    <file>Image/BeginPlot.png</file>
+    <file>Image/CloseLineNoAttack.png</file>
+    <file>Image/CloseLineNoDamage.png</file>
+    <file>Image/CloseLineYDamage.png</file>
+    <file>Image/cylinderShow.png</file>
+    <file>Image/line.png</file>
+    <file>Image/LineCall.png</file>
+    <file>Image/LineNoAttack.png</file>
+    <file>Image/Unable.png</file>
+    <file>Image/LineNoDamage.png</file>
+    <file>Image/LineYDamage.png</file>
+    <file>Image/missile_1.png</file>
+    <file>Image/OpenFile.png</file>
+    <file>Image/restore.png</file>
+    <file>Image/RestorePlot.png</file>
+    <file>Image/right_top_128px_1086623_easyicon.net.png</file>
+    <file>Image/SaveFile.png</file>
+    <file>Image/show.png</file>
+    <file>Image/Stop.png</file>
+    <file>Image/StopPlot.png</file>
+    <file>Image/target.png</file>
+    <file>Image/Telescope.png</file>
+    <file>Image/加速.png</file>
+    <file>Image/减速.png</file>
+    <file>Image/开始.png</file>
+    <file>Image/暂停.png</file>
+  </qresource>
+</RCC>

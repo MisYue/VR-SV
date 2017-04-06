@@ -1,0 +1,16 @@
+
+<map name="readymap.org" type="geocentric" version="2">
+
+  <image name="Imagery" driver="vpb">
+    <url>E:\Data\earth_liu\Earth\Earth.ive</url>
+  </image>
+
+  <elevation name="Elevation" driver="vpb">
+    <url>E:\Data\earth_liu\Earth\Earth.ive</url>
+  </elevation>
+
+  <elevation driver="tms" enabled="true"  name="BaseDem">
+    <url>D:\Work\VRSim\VR_SV\EarthSystem\UserOcean\UserOcean\data\tms\tms.xml</url>
+  </elevation>
+  
+</map>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{24bfc693-602a-49a7-add0-f3f64065ae21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AirLineSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AirLineSystemPlugin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AirLineManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BallMissileTraject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrajectLine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrajectLineDrawable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrajectLineEntity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrajectLineEntityBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrajectLineAttribute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BallMissileTrajectEntity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BallMissileTrajectBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BallMissileAttribute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BallMissileTrajectDrawable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureGeomtry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureGeomtryFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AirLineSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AirLineSystemPlugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\AirLineSystem\AirLineSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\AirLineSystem\IAirLineManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="AirLineManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\AirLineSystem\IAirLinePlugin.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="BallMissileTraject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TrajectLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TrajectLineDrawable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TrajectLineEntity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TrajectLineEntityBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\AirLineSystem\ItrajectoryLineEntity.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TrajectLineAttribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BallMissileTrajectEntity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BallMissileTrajectBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BallMissileAttribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BallMissileTrajectDrawable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\AirLineSystem\IFeatureGeomtryFactory.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureGeomtryFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureGeomtry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

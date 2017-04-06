@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Norad">
+      <UniqueIdentifier>{cd519f61-6763-4773-9afd-e0b29a0203de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{2ade2f8b-e4ab-4a45-87a2-ffab687b2402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sgp4lib">
+      <UniqueIdentifier>{cc4dcae3-389c-4b02-aeed-56bd43cd2635}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SatelliteManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteEntity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteEntityBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteTrajectory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteTrajectoryDraw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\CoordGeodetic.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\CoordTopocentric.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\DateTime.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\Eci.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\Globals.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\Observer.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\OrbitalElements.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\SGP4.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\SolarPosition.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\TimeSpan.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\Tle.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\Util.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sgp4lib\Vector.cpp">
+      <Filter>Sgp4lib</Filter>
+    </ClCompile>
+    <ClCompile Include="SVTle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SatellitePlugin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SatelliteManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SatellitePlugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteEntity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteEntityBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteTrajectory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\SatelliteSystem\ISatelliteManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\SatelliteSystem\ISatellitePlugin.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\SatelliteSystem\SatelliteSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\satellitesystem\ISatelliteEntity.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\SatelliteSystem\ITle.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SatelliteTrajectoryDraw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\CoordGeodetic.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\CoordTopocentric.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\DateTime.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\DecayedException.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\Eci.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\Globals.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\Observer.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\OrbitalElements.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\SatelliteException.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\SGP4.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\SolarPosition.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\TimeSpan.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\Tle.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\TleException.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\Util.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sgp4lib\Vector.h">
+      <Filter>Sgp4lib</Filter>
+    </ClInclude>
+    <ClInclude Include="SVTle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

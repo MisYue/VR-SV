@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D03DD2E-5338-4D51-9657-1B288360E3C9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ComManager</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\debugpublicpropertysheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\releasepublicpropertysheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>K:\HXWR\BJ_LG\OSG\include;K:\HXWR\BJ_LG\boost;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>K:\HXWR\BJ_LG\OSG\lib;K:\HXWR\BJ_LG\boost\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Program Files\OSG\include;D:\Program Files\boost;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>D:\Program Files\OSG\lib;D:\Program Files\boost\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;VRSOFT_EXPORT;use _CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VRSOFT_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionManager.cpp" />
+    <ClCompile Include="AttributeItem.cpp" />
+    <ClCompile Include="AttributeManager.cpp" />
+    <ClCompile Include="AttributeUIFactory.cpp" />
+    <ClCompile Include="CandidatasManager.cpp" />
+    <ClCompile Include="ComInstanceEnumerator.cpp" />
+    <ClCompile Include="ComManager.cpp" />
+    <ClCompile Include="ComManagerConfig.cpp" />
+    <ClCompile Include="ComManagerUI.cpp" />
+    <ClCompile Include="ConfigFile.cpp" />
+    <ClCompile Include="ConfigManager.cpp" />
+    <ClCompile Include="Convert.cpp" />
+    <ClCompile Include="DateTime.cpp" />
+    <ClCompile Include="DyLib.cpp" />
+    <ClCompile Include="DyLibManager.cpp" />
+    <ClCompile Include="EntityBase.cpp" />
+    <ClCompile Include="EntityBaseAttribute.cpp" />
+    <ClCompile Include="EntityDirctor.cpp" />
+    <ClCompile Include="EntityDrawAttribute.cpp" />
+    <ClCompile Include="EntityFactoryManager.cpp" />
+    <ClCompile Include="EntityFileManager.cpp" />
+    <ClCompile Include="EntityFileOperator.cpp" />
+    <ClCompile Include="EntityID.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="FileOperetor.cpp" />
+    <ClCompile Include="FileUtil.cpp" />
+    <ClCompile Include="GUID.cpp" />
+    <ClCompile Include="GuidanceVisitor.cpp" />
+    <ClCompile Include="Inpute.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="MeshModel.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="MessageManager.cpp" />
+    <ClCompile Include="MoveAttribute.cpp" />
+    <ClCompile Include="PathManager.cpp" />
+    <ClCompile Include="PropertyBrowser\PropertyBrowser.cpp" />
+    <ClCompile Include="SimManager.cpp" />
+    <ClCompile Include="EntityThread.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="StrategyManager.cpp" />
+    <ClCompile Include="TimePoint.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TimeUtil.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="transformation.cpp" />
+    <ClCompile Include="VRPath.cpp" />
+    <ClCompile Include="VRSoftThread.cpp" />
+    <ClCompile Include="VRStringUtil.cpp" />
+    <ClCompile Include="VRVariant.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Public\ComManager\Action\Action.h" />
+    <ClInclude Include="..\..\Public\ComManager\Action\ActionImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\Action\ActionPlugin.h" />
+    <ClInclude Include="..\..\Public\ComManager\Action\IAciton.h" />
+    <ClInclude Include="..\..\Public\ComManager\Action\IActionManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\Attribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\AttributeImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\AttributeItemImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\AttributePlugin.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IAttribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IAttributeItem.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IAttributeManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IEntityBaseAttribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IEntityDrawAttribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IEntityMoveAttribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\ComManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\ComManagerImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\Convert.h" />
+    <ClInclude Include="..\..\Public\ComManager\DateTime.h" />
+    <ClInclude Include="..\..\Public\ComManager\Drawable\Drawable.h" />
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IDrawTrajectory.h" />
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IDrawTrajectoryAttribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IDrawTrajectoryManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IMeshDrawAttribute.h" />
+    <ClInclude Include="..\..\Public\ComManager\DyLib.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\Entity.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\EntityBaseFactoryImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\EntityBaseImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\EntitySystem.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityBase.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityBaseFactory.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityBulider.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityComponent.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityComposite.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityDrawManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityFactoryManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityID.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityVisitor.h" />
+    <ClInclude Include="..\..\Public\ComManager\EventImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\FeatureGeomtry\FeatureGeomtry.h" />
+    <ClInclude Include="..\..\Public\ComManager\FeatureGeomtry\IFeatureGeomtry.h" />
+    <ClInclude Include="..\..\Public\ComManager\FileOperetor.h" />
+    <ClInclude Include="..\..\Public\ComManager\FileUtil.h" />
+    <ClInclude Include="..\..\Public\ComManager\GUID.h" />
+    <ClInclude Include="..\..\Public\ComManager\IAttributeUIFactory.h" />
+    <ClInclude Include="..\..\Public\ComManager\IComInstanceEnumerator.h" />
+    <ClInclude Include="..\..\Public\ComManager\IComManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\IComManagerConfig.h" />
+    <ClInclude Include="..\..\Public\ComManager\IComManagerUI.h" />
+    <ClInclude Include="..\..\Public\ComManager\IConfigFile.h" />
+    <ClInclude Include="..\..\Public\ComManager\IConfigManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\IEvent.h" />
+    <ClInclude Include="..\..\Public\ComManager\ILog.h" />
+    <ClInclude Include="..\..\Public\ComManager\ILogManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\IMessage.h" />
+    <ClInclude Include="..\..\Public\ComManager\IMessageManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\IPluginManagerUI.h" />
+    <ClInclude Include="..\..\Public\ComManager\ISimManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\IState.h" />
+    <ClInclude Include="..\..\Public\ComManager\IStateMachine.h" />
+    <ClInclude Include="..\..\Public\ComManager\IStrategy.h" />
+    <ClInclude Include="..\..\Public\ComManager\IStrategyManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\ITimer.h" />
+    <ClInclude Include="..\..\Public\ComManager\ITrajectory.h" />
+    <ClInclude Include="..\..\Public\ComManager\Path\IPath.h" />
+    <ClInclude Include="..\..\Public\ComManager\Path\IPathManager.h" />
+    <ClInclude Include="..\..\Public\ComManager\Path\IPathStrategy.h" />
+    <ClInclude Include="..\..\Public\ComManager\Path\Path.h" />
+    <ClInclude Include="..\..\Public\ComManager\Property\Property.h" />
+    <ClInclude Include="..\..\Public\ComManager\Property\PropertyImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\StateMachineImp.h" />
+    <ClInclude Include="..\..\Public\ComManager\TimeUtil.h" />
+    <ClInclude Include="..\..\Public\ComManager\Tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\Public\ComManager\Tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\Public\ComManager\Tinyxml\XML.h" />
+    <ClInclude Include="..\..\Public\ComManager\UI\IAttributeItemUI.h" />
+    <ClInclude Include="..\..\Public\ComManager\UI\IAttributeUI.h" />
+    <ClInclude Include="..\..\Public\ComManager\UI\IEntityManagerUI.h" />
+    <ClInclude Include="..\..\Public\ComManager\UI\IEntityTypeUI.h" />
+    <ClInclude Include="..\..\Public\ComManager\UI\UI.h" />
+    <ClInclude Include="..\..\Public\ComManager\VRSoftThread.h" />
+    <ClInclude Include="..\..\Public\ComManager\VRStringUtil.h" />
+    <ClInclude Include="..\..\Public\ComManager\VRVariant.h" />
+    <ClInclude Include="..\..\Public\Plugin\IComFactory.h" />
+    <ClInclude Include="..\..\Public\Plugin\IComManagerFace.h" />
+    <ClInclude Include="..\..\Public\Plugin\IComManagerFaceImp.h" />
+    <ClInclude Include="..\..\Public\Plugin\IConfig.h" />
+    <ClInclude Include="..\..\Public\Plugin\IConfigUI.h" />
+    <ClInclude Include="..\..\Public\Plugin\IPlugin.h" />
+    <ClInclude Include="..\..\Public\Plugin\IPluginUI.h" />
+    <ClInclude Include="..\..\Public\Plugin\PluginDepined.h" />
+    <ClInclude Include="ActionManager.h" />
+    <ClInclude Include="AttributeItem.h" />
+    <ClInclude Include="AttributeManager.h" />
+    <ClInclude Include="AttributeUIFactory.h" />
+    <ClInclude Include="CandidatasManager.h" />
+    <ClInclude Include="ComInstanceEnumerator.h" />
+    <ClInclude Include="ComManager.h" />
+    <ClInclude Include="ComManagerConfig.h" />
+    <ClInclude Include="ComManagerUI.h" />
+    <ClInclude Include="ConfigFile.h" />
+    <ClInclude Include="ConfigManager.h" />
+    <ClInclude Include="DyLibManager.h" />
+    <ClInclude Include="EntityBase.h" />
+    <ClInclude Include="EntityBaseAttribute.h" />
+    <ClInclude Include="EntityDirctor.h" />
+    <ClInclude Include="EntityDrawAttribute.h" />
+    <ClInclude Include="EntityFactoryManager.h" />
+    <ClInclude Include="EntityFileManager.h" />
+    <ClInclude Include="EntityFileOperator.h" />
+    <ClInclude Include="EntityID.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="GuidanceVisitor.h" />
+    <ClInclude Include="Inpute.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="LogManager.h" />
+    <ClInclude Include="MeshModel.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageManager.h" />
+    <ClInclude Include="MoveAttribute.h" />
+    <ClInclude Include="PathManager.h" />
+    <ClInclude Include="PropertyBrowser\AbstractUIEditorFactoryBase.h" />
+    <ClInclude Include="PropertyBrowser\PropertyBrowser.h" />
+    <ClInclude Include="SimManager.h" />
+    <ClInclude Include="EntityThread.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="StrategyManager.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="transformation.h" />
+    <ClInclude Include="VRPath.h" />
+    <ClInclude Include="VRStringUtil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

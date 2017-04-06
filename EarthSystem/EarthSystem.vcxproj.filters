@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{751ddcc5-5ddd-4da7-a3d6-bb7689f5cf86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OceanEarth">
+      <UniqueIdentifier>{d0cb5bb1-7050-42c8-99e2-7971d65b80e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EarthConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthSystemPlugin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAnnoEventHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SolarConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SolarPlanet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NorthArrow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Compass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="baseWidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="walker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="walkerEventHandle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zoom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zoomEventHandle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="compassEventHandle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OsgEarth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchroManipulator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchroManipManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchroMainpulator2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthLayerManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OceanEarth\ScreenAlignedQuad.cpp">
+      <Filter>OceanEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OceanEarth\OceanEarth.cpp">
+      <Filter>OceanEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="OceanEarth\OceanEarthPPU.cpp">
+      <Filter>OceanEarth</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthManipulator3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Feature.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EarthConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthSystemPlugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAnnoEventHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SolarConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SolarPlanet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NorthArrow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Compass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="baseWidget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="walker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="walkerEventHandle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zoomEventHandle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="compassEventHandle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\IEarthManipulator.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\EarthSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\IEarth.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\IEartManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\ISolarConfig.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OsgEarth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchroManipulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchroManipManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchroMainpulator2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\ISynchroManipManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthLayerManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\IEarthLayerManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="OceanEarth\ScreenAlignedQuad.h">
+      <Filter>OceanEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OceanEarth\OceanEarth.h">
+      <Filter>OceanEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="OceanEarth\OceanEarthPPU.h">
+      <Filter>OceanEarth</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthManipulator3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\IFeature.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Feature.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\EarthSystem\IFeatureManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OceanEarth\SimpleOceanShaders">
+      <Filter>OceanEarth</Filter>
+    </None>
+  </ItemGroup>
+</Project>

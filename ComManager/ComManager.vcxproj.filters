@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{fe71e2d2-1b4a-47fe-93d2-ca8e54f733f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{ef24189e-a9ee-40c2-8eea-42b663287419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawable">
+      <UniqueIdentifier>{a505f340-bf5a-401d-a2bc-03da21102924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Property">
+      <UniqueIdentifier>{d1e6e9d7-b9da-4de5-97b0-ea6579333583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Action">
+      <UniqueIdentifier>{758786a4-1290-4bee-8998-0b3fbddbd724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Attribute">
+      <UniqueIdentifier>{e81cb979-9ba9-42f3-a48b-167976f4826b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Entity">
+      <UniqueIdentifier>{0380c008-e14a-4167-bdd6-6da7b89ce1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\UI">
+      <UniqueIdentifier>{85aad3df-1d52-4780-ae76-1a14a23a6125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tinyxml">
+      <UniqueIdentifier>{af29661a-4fbe-4069-a015-e0ae78049b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Tinyxml">
+      <UniqueIdentifier>{2e4da5e0-fa75-4124-9315-b55c6d55cbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\FeatureGeomtry">
+      <UniqueIdentifier>{b256b3e4-ea39-4118-ae82-a471fc2792b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Path">
+      <UniqueIdentifier>{3ae01fd6-0128-4d45-b4e6-536137d5c545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PropertyBrowser">
+      <UniqueIdentifier>{6d1b41c9-481c-4323-9c36-c1e2ea8d8418}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComInstanceEnumerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ComManagerUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DyLibManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VRVariant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DyLib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOperetor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GUID.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TimePoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VRSoftThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeUIFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CandidatasManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityFactoryManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityID.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StrategyManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityBaseAttribute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ComManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ComManagerConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityDirctor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Inpute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SimManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTime.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GuidanceVisitor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveAttribute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityFileOperator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinystr.cpp">
+      <Filter>源文件\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxml.cpp">
+      <Filter>源文件\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp">
+      <Filter>源文件\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp">
+      <Filter>源文件\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityFileManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="transformation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VRStringUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VRPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityDrawAttribute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyBrowser\PropertyBrowser.cpp">
+      <Filter>PropertyBrowser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ComInstanceEnumerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComManagerConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComManagerUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DyLibManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ComManagerImp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ComManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Convert.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\DyLib.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\FileOperetor.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\GUID.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\VRSoftThread.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\VRVariant.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IMessage.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IMessageManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ILog.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ILogManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IAttributeUIFactory.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IComInstanceEnumerator.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IComManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IComManagerConfig.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IComManagerUI.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IConfigManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IPluginManagerUI.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IState.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IStateMachine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IStrategy.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IStrategyManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\StateMachineImp.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeUIFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CandidatasManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFactoryManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityID.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StrategyManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IConfigFile.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IComFactory.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IComManagerFace.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IComManagerFaceImp.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IConfig.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IConfigUI.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IPlugin.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\IPluginUI.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\Plugin\PluginDepined.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\EventImp.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\IEvent.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Drawable\Drawable.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityBaseAttribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityDirctor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\FileUtil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IMeshDrawAttribute.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Inpute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ITimer.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SimManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ISimManager.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\ITrajectory.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IDrawTrajectory.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IDrawTrajectoryManager.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\DateTime.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\TimeUtil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Property\PropertyImp.h">
+      <Filter>Public\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Property\Property.h">
+      <Filter>Public\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Drawable\IDrawTrajectoryAttribute.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="GuidanceVisitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveAttribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Action\IAciton.h">
+      <Filter>Public\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Action\IActionManager.h">
+      <Filter>Public\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Action\Action.h">
+      <Filter>Public\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Action\ActionImp.h">
+      <Filter>Public\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Action\ActionPlugin.h">
+      <Filter>Public\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\Attribute.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\AttributeImp.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\AttributeItemImp.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IAttribute.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IAttributeItem.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IAttributeManager.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IEntityBaseAttribute.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IEntityMoveAttribute.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\Entity.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\AttributePlugin.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\EntityBaseFactoryImp.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\EntityBaseImp.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\EntitySystem.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityBase.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityBaseFactory.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityBulider.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityComponent.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityComposite.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityDrawManager.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityFactoryManager.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityID.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityManager.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Entity\IEntityVisitor.h">
+      <Filter>Public\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\UI\IEntityTypeUI.h">
+      <Filter>Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\UI\UI.h">
+      <Filter>Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\UI\IEntityManagerUI.h">
+      <Filter>Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\UI\IAttributeItemUI.h">
+      <Filter>Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\UI\IAttributeUI.h">
+      <Filter>Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFileOperator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityFileManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Tinyxml\tinystr.h">
+      <Filter>Public\Tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Tinyxml\tinyxml.h">
+      <Filter>Public\Tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Tinyxml\XML.h">
+      <Filter>Public\Tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="transformation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\FeatureGeomtry\FeatureGeomtry.h">
+      <Filter>Public\FeatureGeomtry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\FeatureGeomtry\IFeatureGeomtry.h">
+      <Filter>Public\FeatureGeomtry</Filter>
+    </ClInclude>
+    <ClInclude Include="VRStringUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Path\IPath.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Path\Path.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Path\IPathStrategy.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+    <ClInclude Include="VRPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Path\IPathManager.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\VRStringUtil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Public\ComManager\Attribute\IEntityDrawAttribute.h">
+      <Filter>Public\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityDrawAttribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyBrowser\PropertyBrowser.h">
+      <Filter>PropertyBrowser</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyBrowser\AbstractUIEditorFactoryBase.h">
+      <Filter>PropertyBrowser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

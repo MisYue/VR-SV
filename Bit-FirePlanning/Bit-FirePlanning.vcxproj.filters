@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Fragment">
+      <UniqueIdentifier>{76f3a0e6-b5dc-4139-935e-06f0a824bf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Rocket">
+      <UniqueIdentifier>{8df569dc-619b-4c3c-8644-93a9151eca70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Aim">
+      <UniqueIdentifier>{bcee3e28-d376-44b2-a041-d9f6bb43fae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Fragment">
+      <UniqueIdentifier>{407646ff-be46-453e-b278-063495ea602d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Rocket">
+      <UniqueIdentifier>{46444941-bddf-4b6c-982d-41c77690fcab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Aim">
+      <UniqueIdentifier>{271d17f6-cfad-45dd-9186-39970f24486f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bit_FragmentAnalyse.cpp">
+      <Filter>源文件\Fragment</Filter>
+    </ClCompile>
+    <ClCompile Include="Bit-FragmentDataStructure.cpp">
+      <Filter>源文件\Fragment</Filter>
+    </ClCompile>
+    <ClCompile Include="Bit-RocketDataStructure.cpp">
+      <Filter>源文件\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Bit-AimDataStructure.cpp">
+      <Filter>源文件\Aim</Filter>
+    </ClCompile>
+    <ClCompile Include="Bit_RocketAnalyse.cpp">
+      <Filter>源文件\Rocket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bit-FragmentDataStructure.h">
+      <Filter>头文件\Fragment</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit_FragmentAnalyse.h">
+      <Filter>头文件\Fragment</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit-RocketDataStructure.h">
+      <Filter>头文件\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit-AimDataStructure.h">
+      <Filter>头文件\Aim</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit_RocketAnalyse.h">
+      <Filter>头文件\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit-FirePlanningGlobal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

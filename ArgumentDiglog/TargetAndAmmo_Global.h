@@ -1,0 +1,1 @@
+#define TARGETANDAMMO_API __declspec(dllexport) 

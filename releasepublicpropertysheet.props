@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>osgEarthSplat.lib;osgEarthQt.lib;osgEarth.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarthUtil.lib;osgAnimation.lib;osgPresentation.lib;osgShadow.lib;osgSim.lib;osgTerrain.lib;osgQt.lib;osgManipulator.lib;osgParticle.lib;osgWidget.lib;osgUI.lib;osgVolume.lib;osgFX.lib;osgViewer.lib;osgGA.lib;osgText.lib;osgDB.lib;osgUtil.lib;osg.lib;OpenThreads.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OSG_EARTH_DIR)\lib;$(OSG_DIR)\lib;$(BOOST_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OSG_EARTH_DIR)\include;$(OSG_DIR)\include;$(BOOST_DIR)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

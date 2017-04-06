@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7B5AC84-46A0-4F93-AAE0-921F26C92986}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SatelliteSystem</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SATELLITESYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program Files\boost;D:\Program Files\OSG\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Program Files\boost\lib;D:\Program Files\OSG\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)$(Configuration)\$(ProjectName).dll $(SolutionDir)$(Configuration)\Plugin\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SATELLITESYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SatelliteEntity.cpp" />
+    <ClCompile Include="SatelliteEntityBuilder.cpp" />
+    <ClCompile Include="SatelliteManager.cpp" />
+    <ClCompile Include="SatellitePlugin.cpp" />
+    <ClCompile Include="SatelliteSystem.cpp" />
+    <ClCompile Include="SatelliteTrajectory.cpp" />
+    <ClCompile Include="Sgp4lib\CoordGeodetic.cpp" />
+    <ClCompile Include="Sgp4lib\CoordTopocentric.cpp" />
+    <ClCompile Include="Sgp4lib\DateTime.cpp" />
+    <ClCompile Include="Sgp4lib\Eci.cpp" />
+    <ClCompile Include="Sgp4lib\Globals.cpp" />
+    <ClCompile Include="Sgp4lib\Observer.cpp" />
+    <ClCompile Include="Sgp4lib\OrbitalElements.cpp" />
+    <ClCompile Include="Sgp4lib\SGP4.cpp" />
+    <ClCompile Include="Sgp4lib\SolarPosition.cpp" />
+    <ClCompile Include="Sgp4lib\TimeSpan.cpp" />
+    <ClCompile Include="Sgp4lib\Tle.cpp" />
+    <ClCompile Include="Sgp4lib\Util.cpp" />
+    <ClCompile Include="Sgp4lib\Vector.cpp" />
+    <ClCompile Include="SVTle.cpp" />
+    <ClCompile Include="SatelliteTrajectoryDraw.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\public\satellitesystem\ISatelliteEntity.h" />
+    <ClInclude Include="..\..\Public\SatelliteSystem\ISatelliteManager.h" />
+    <ClInclude Include="..\..\Public\SatelliteSystem\ISatellitePlugin.h" />
+    <ClInclude Include="..\..\Public\SatelliteSystem\ITle.h" />
+    <ClInclude Include="..\..\Public\SatelliteSystem\SatelliteSystem.h" />
+    <ClInclude Include="SatelliteEntity.h" />
+    <ClInclude Include="SatelliteEntityBuilder.h" />
+    <ClInclude Include="SatelliteManager.h" />
+    <ClInclude Include="SatellitePlugin.h" />
+    <ClInclude Include="SatelliteSystem.h" />
+    <ClInclude Include="SatelliteTrajectory.h" />
+    <ClInclude Include="Sgp4lib\CoordGeodetic.h" />
+    <ClInclude Include="Sgp4lib\CoordTopocentric.h" />
+    <ClInclude Include="Sgp4lib\DateTime.h" />
+    <ClInclude Include="Sgp4lib\DecayedException.h" />
+    <ClInclude Include="Sgp4lib\Eci.h" />
+    <ClInclude Include="Sgp4lib\Globals.h" />
+    <ClInclude Include="Sgp4lib\Observer.h" />
+    <ClInclude Include="Sgp4lib\OrbitalElements.h" />
+    <ClInclude Include="Sgp4lib\SatelliteException.h" />
+    <ClInclude Include="Sgp4lib\SGP4.h" />
+    <ClInclude Include="Sgp4lib\SolarPosition.h" />
+    <ClInclude Include="Sgp4lib\TimeSpan.h" />
+    <ClInclude Include="Sgp4lib\Tle.h" />
+    <ClInclude Include="Sgp4lib\TleException.h" />
+    <ClInclude Include="Sgp4lib\Util.h" />
+    <ClInclude Include="Sgp4lib\Vector.h" />
+    <ClInclude Include="SVTle.h" />
+    <ClInclude Include="SatelliteTrajectoryDraw.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

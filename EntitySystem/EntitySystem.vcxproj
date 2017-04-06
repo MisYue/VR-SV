@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14F13313-D24B-491F-A20D-881F5583553E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EntitySystem</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Program Files\OSG\include;D:\Program Files\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\OSG\lib;D:\Program Files\boost\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Program Files\OSG\include;D:\Program Files\boost;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>D:\Program Files\OSG\lib;D:\Program Files\boost\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ENTITYSYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ENTITYSYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AttributeItem.cpp" />
+    <ClCompile Include="AttributeManager.cpp" />
+    <ClCompile Include="AttributeUIFactory.cpp" />
+    <ClCompile Include="CandidatasManager.cpp" />
+    <ClCompile Include="EntityFactoryManager.cpp" />
+    <ClCompile Include="EntityID.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="EntitySystem.cpp" />
+    <ClCompile Include="EntitySystemPlugin.cpp" />
+    <ClCompile Include="GlobalState.cpp" />
+    <ClCompile Include="MeshManager.cpp" />
+    <ClCompile Include="MeshModel.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="StrategyManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Public\EntitySystem\AttributeImp.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\AttributeItemImp.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\AttributeItemUIImp.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\EntityBaseFactoryImp.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\EntityBaseImp.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\EntitySystem.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IAttribute.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IAttributeItem.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IAttributeItemUI.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IAttributeManager.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IAttributeUI.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IAttributeUIFactory.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityBase.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityBaseFactory.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityComponent.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityComposite.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityFactoryManager.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityID.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityManager.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IEntityRenderBase.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IState.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IStateMachine.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IStrategy.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\IStrategyManager.h" />
+    <ClInclude Include="..\..\Public\EntitySystem\StateMachineImp.h" />
+    <ClInclude Include="AttributeItem.h" />
+    <ClInclude Include="AttributeManager.h" />
+    <ClInclude Include="AttributeUIFactory.h" />
+    <ClInclude Include="CandidatasManager.h" />
+    <ClInclude Include="EntityFactoryManager.h" />
+    <ClInclude Include="EntityID.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="EntitySystem.h" />
+    <ClInclude Include="EntitySystemPlugin.h" />
+    <ClInclude Include="GlobalState.h" />
+    <ClInclude Include="MeshManager.h" />
+    <ClInclude Include="MeshModel.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="StrategyManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

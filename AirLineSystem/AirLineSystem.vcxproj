@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{673C22EE-264A-42D1-BFE5-055A7A371EF8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AirLineSystem</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\debugpublicpropertysheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\releasepublicpropertysheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>K:\HXWR\BJ_LG\OSG\include;K:\HXWR\BJ_LG\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>K:\HXWR\BJ_LG\OSG\lib;K:\HXWR\BJ_LG\boost\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Program Files\OSG\include;D:\Program Files\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\OSG\lib;D:\Program Files\boost\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\Plugin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AIRLINESYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)$(Configuration)\$(ProjectName).dll $(SolutionDir)$(Configuration)\Plugin\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AIRLINESYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BallMissileAttribute.cpp" />
+    <ClCompile Include="BallMissileTrajectBuilder.cpp" />
+    <ClCompile Include="BallMissileTrajectDrawable.cpp" />
+    <ClCompile Include="BallMissileTrajectEntity.cpp" />
+    <ClCompile Include="FeatureGeomtry.cpp" />
+    <ClCompile Include="FeatureGeomtryFactory.cpp" />
+    <ClCompile Include="TrajectLine.cpp" />
+    <ClCompile Include="AirLineManager.cpp" />
+    <ClCompile Include="AirLineSystem.cpp" />
+    <ClCompile Include="AirLineSystemPlugin.cpp" />
+    <ClCompile Include="BallMissileTraject.cpp" />
+    <ClCompile Include="TrajectLineAttribute.cpp" />
+    <ClCompile Include="TrajectLineDrawable.cpp" />
+    <ClCompile Include="TrajectLineEntity.cpp" />
+    <ClCompile Include="TrajectLineEntityBuilder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Public\AirLineSystem\AirLineSystem.h" />
+    <ClInclude Include="..\..\Public\AirLineSystem\IFeatureGeomtryFactory.h" />
+    <ClInclude Include="..\..\Public\AirLineSystem\ItrajectoryLineEntity.h" />
+    <ClInclude Include="..\..\Public\AirLineSystem\IAirLineManager.h" />
+    <ClInclude Include="..\..\Public\AirLineSystem\IAirLinePlugin.h" />
+    <ClInclude Include="BallMissileAttribute.h" />
+    <ClInclude Include="BallMissileTrajectBuilder.h" />
+    <ClInclude Include="BallMissileTrajectDrawable.h" />
+    <ClInclude Include="BallMissileTrajectEntity.h" />
+    <ClInclude Include="FeatureGeomtry.h" />
+    <ClInclude Include="FeatureGeomtryFactory.h" />
+    <ClInclude Include="TrajectLine.h" />
+    <ClInclude Include="AirLineManager.h" />
+    <ClInclude Include="AirLineSystem.h" />
+    <ClInclude Include="AirLineSystemPlugin.h" />
+    <ClInclude Include="BallMissileTraject.h" />
+    <ClInclude Include="TrajectLineAttribute.h" />
+    <ClInclude Include="TrajectLineDrawable.h" />
+    <ClInclude Include="TrajectLineEntity.h" />
+    <ClInclude Include="TrajectLineEntityBuilder.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A38AC00B-6DB8-4374-B575-319EF1BB1DF2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EarthSystem</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\debugpublicpropertysheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\releasepublicpropertysheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>K:\HXWR\BJ_LG\OSG\include;K:\HXWR\BJ_LG\boost;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>K:\HXWR\BJ_LG\OSG\lib;K:\HXWR\BJ_LG\boost\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Program Files\OSG\include;D:\Program Files\boost;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>D:\Program Files\OSG\lib;D:\Program Files\boost\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;EARTHSYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)$(Configuration)\$(ProjectName).dll $(SolutionDir)$(Configuration)\Plugin\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;EARTHSYSTEM_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="baseWidget.cpp" />
+    <ClCompile Include="EarthManipulator3D.cpp" />
+    <ClCompile Include="CameraInfo.cpp" />
+    <ClCompile Include="Compass.cpp" />
+    <ClCompile Include="compassEventHandle.cpp" />
+    <ClCompile Include="EarthConfig.cpp" />
+    <ClCompile Include="EarthLayerManager.cpp" />
+    <ClCompile Include="EarthSystem.cpp" />
+    <ClCompile Include="EarthSystemPlugin.cpp" />
+    <ClCompile Include="EarthUtil.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="FeatureManager.cpp" />
+    <ClCompile Include="MyAnnoEventHandler.cpp" />
+    <ClCompile Include="NorthArrow.cpp" />
+    <ClCompile Include="OceanEarth\ScreenAlignedQuad.cpp" />
+    <ClCompile Include="OceanEarth\OceanEarth.cpp" />
+    <ClCompile Include="OceanEarth\OceanEarthPPU.cpp" />
+    <ClCompile Include="OsgEarth.cpp" />
+    <ClCompile Include="OsgEarth2D.cpp" />
+    <ClCompile Include="OsgEarth3D.cpp" />
+    <ClCompile Include="SolarConfig.cpp" />
+    <ClCompile Include="SolarPlanet.cpp" />
+    <ClCompile Include="SynchroMainpulator2D.cpp" />
+    <ClCompile Include="SynchroManipManager.cpp" />
+    <ClCompile Include="SynchroManipulator.cpp" />
+    <ClCompile Include="walker.cpp" />
+    <ClCompile Include="walkerEventHandle.cpp" />
+    <ClCompile Include="zoom.cpp" />
+    <ClCompile Include="zoomEventHandle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Public\EarthSystem\EarthSystem.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\IEarth.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\IEarthLayerManager.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\IEarthManipulator.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\IEartManager.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\IFeature.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\IFeatureManager.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\ISolarConfig.h" />
+    <ClInclude Include="..\..\Public\EarthSystem\ISynchroManipManager.h" />
+    <ClInclude Include="baseWidget.h" />
+    <ClInclude Include="EarthManipulator3D.h" />
+    <ClInclude Include="CameraInfo.h" />
+    <ClInclude Include="Compass.h" />
+    <ClInclude Include="compassEventHandle.h" />
+    <ClInclude Include="EarthConfig.h" />
+    <ClInclude Include="EarthLayerManager.h" />
+    <ClInclude Include="EarthSystem.h" />
+    <ClInclude Include="EarthSystemPlugin.h" />
+    <ClInclude Include="EarthUtil.h" />
+    <ClInclude Include="Feature.h" />
+    <ClInclude Include="FeatureManager.h" />
+    <ClInclude Include="MyAnnoEventHandler.h" />
+    <ClInclude Include="NorthArrow.h" />
+    <ClInclude Include="OceanEarth\ScreenAlignedQuad.h" />
+    <ClInclude Include="OceanEarth\OceanEarth.h" />
+    <ClInclude Include="OceanEarth\OceanEarthPPU.h" />
+    <ClInclude Include="OsgEarth.h" />
+    <ClInclude Include="OsgEarth2D.h" />
+    <ClInclude Include="OsgEarth3D.h" />
+    <ClInclude Include="SolarConfig.h" />
+    <ClInclude Include="SolarPlanet.h" />
+    <ClInclude Include="SynchroMainpulator2D.h" />
+    <ClInclude Include="SynchroManipManager.h" />
+    <ClInclude Include="SynchroManipulator.h" />
+    <ClInclude Include="walker.h" />
+    <ClInclude Include="walkerEventHandle.h" />
+    <ClInclude Include="zoom.h" />
+    <ClInclude Include="zoomEventHandle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OceanEarth\SimpleOceanShaders" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
